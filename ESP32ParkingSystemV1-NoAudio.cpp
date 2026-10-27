@@ -1,3 +1,37 @@
+// ## Pin Configuration
+
+// ### MFRC522 RFID Module
+// | Pin | ESP32 GPIO |
+// |-----|------------|
+// | RST | 27 |
+// | SS  | 5 |
+// | MOSI| 23 (default SPI) |
+// | MISO| 19 (default SPI) |
+// | SCK | 18 (default SPI) |
+// | GND | GND |
+// | VCC | 5V |
+
+// ### Servo Motor
+// | Pin | ESP32 GPIO |
+// |-----|------------|
+// | Signal | 13 |
+// | VCC | 5V |
+// | GND | GND |
+
+// ### IR Sensors
+// | Sensor | ESP32 GPIO | Logic |
+// |--------|------------|-------|
+// | IR Masuk (Entry) | 32 | LOW = object detected |
+// | IR Keluar (Exit) | 33 | LOW = object detected |
+
+// ### LCD I2C 1602
+// | Pin | ESP32 GPIO |
+// |-----|------------|
+// | VCC | 5V |
+// | GND | GND |
+// | SDA | 21 (default I2C) |
+// | SCL | 22 (default I2C) |
+
 #include <Arduino.h>
 #include <SPI.h>
 #include <MFRC522.h>
